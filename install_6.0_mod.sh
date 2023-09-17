@@ -485,7 +485,7 @@ Install_Bt(){
 	wget -O /www/server/panel/install/public.sh ${download_Url}/install/public.sh -T 10
 
 	##面板下载链接
-	wget -O panel.zip https://raw.githubusercontent.com/DanKE123abc/BTpanel7.7/main/panel.zip -T 10
+	wget -O panel.zip https://raw.githubusercontent.com/GettionHub/baota/main/panel.zip -T 10
 	##面板下载链接
 
 	if [ -f "${setup_path}/server/panel/data/default.db" ];then
