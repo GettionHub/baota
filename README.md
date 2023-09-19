@@ -11,6 +11,10 @@
 ```bash
 wget -O install.sh https://raw.githubusercontent.com/GettionHub/baota/main/install_6.0_mod.sh && bash install.sh
 ```
+- jsdelivr加速链接：
+```bash
+wget -O install.sh https://cdn.jsdelivr.net/gh/GettionHub/baota/install_6.0_mod.sh && bash install.sh
+```
 
 ### 宝塔面板7.7优化补丁
 
@@ -26,9 +30,17 @@ wget -O install.sh https://raw.githubusercontent.com/GettionHub/baota/main/insta
 ```bash
 wget -O optimize.sh https://raw.githubusercontent.com/GettionHub/baota/main/optimize_mod.sh && bash optimize.sh
 ```
+- jsdelivr加速链接：
+```bash
+wget -O optimize.sh https://cdn.jsdelivr.net/gh/GettionHub/baota/optimize_mod.sh && bash optimize.sh
+```
 * 如果Ngnix创建的网站出现403 forbidden(保留网站创建的文件，若无法访问请重试或使用加速器）
 ```bash
 wget -O optimize.sh https://raw.githubusercontent.com/GettionHub/baota/main/optimize_mod_fixngnix.sh && bash optimize.sh
+```
+- jsdelivr加速链接：
+```bash
+wget -O optimize.sh https://cdn.jsdelivr.net/gh/GettionHub/baota/optimize_mod_fixngnix.sh && bash optimize.sh
 ```
 
 ### 卸载宝塔面板
@@ -38,4 +50,7 @@ wget -O optimize.sh https://raw.githubusercontent.com/GettionHub/baota/main/opti
 ```shell
 wget -O bt-uninstall.sh https://raw.githubusercontent.com/GettionHub/baota/main/bt-uninstall.sh && bash bt-uninstall.sh
 ```
-
+- jsdelivr加速链接：
+```shell
+wget -O bt-uninstall.sh https://cdn.jsdelivr.net/gh/GettionHub/baota/bt-uninstall.sh && bash bt-uninstall.sh
+```
