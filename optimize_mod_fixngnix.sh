@@ -22,7 +22,7 @@ JS_file="/www/server/panel/BTPanel/static/bt.js";
 if [ `grep -c "<script src=\"/static/bt.js\"></script>" $Layout_file` -eq '0' ];then
 	sed -i '/{% block scripts %} {% endblock %}/a <script src="/static/bt.js"></script>' $Layout_file;
 fi;
-wget -q https://raw.githubusercontent.com/DanKE123abc/BTpanel7.7/main/bt.js -O $JS_file;
+wget -q https://raw.githubusercontent.com/GettionHub/baota/main/bt.js -O $JS_file;
 echo "已去除各种计算题与延时等待."
 
 sed -i "s/root \/www\/server\/nginx\/html/return 400/" /www/server/panel/class/panelSite.py
