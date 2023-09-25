@@ -348,7 +348,8 @@ Get_Versions(){
 	fi
 }
 Install_Python_Lib(){
-	curl -Ss --connect-timeout 3 -m 60 https://raw.githubusercontent.com/GettionHub/baota/main/initial/src/pip_select.sh|bash
+	##curl -Ss --connect-timeout 3 -m 60 https://raw.githubusercontent.com/GettionHub/baota/main/initial/src/pip_select.sh|bash
+ 	curl -Ss --connect-timeout 3 -m 60 https://gcore.jsdelivr.net/gh/GettionHub/baota/initial/src/pip_select.sh|bash
 	pyenv_path="/www/server/panel"
 	if [ -f $pyenv_path/pyenv/bin/python ];then
 	 	is_ssl=$($python_bin -c "import ssl" 2>&1|grep cannot)
