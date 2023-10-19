@@ -118,7 +118,7 @@ Auto_Swap()
 		echo "Swap total sizse: $swap";
 		return;
 	fi
-	
+
 	sed -i "/\/www\/swap/d" /etc/fstab
 	rm -f $swapFile
 }
@@ -146,7 +146,7 @@ get_node_url(){
 		echo '---------------------------------------------';
 		return
 	fi
-	
+
 	echo '---------------------------------------------';
 	echo "Selected download node...";
 	nodes=(http://dg2.bt.cn http://dg1.bt.cn http://125.90.93.52:5880 http://36.133.1.8:5880 http://123.129.198.197 http://38.34.185.130 http://116.213.43.206:5880 http://128.1.164.196);
@@ -223,7 +223,7 @@ Install_RPM_Pack(){
 	#if [ "${checkYumRepo}" != "200" ] && [ "${SYS_TYPE}" ];then
 	#	curl -Ss --connect-timeout 3 -m 60 http://download.bt.cn/install/yumRepo_select.sh|bash
 	#fi
-	
+
 	#尝试同步时间(从bt.cn)
 	echo 'Synchronizing system time...'
 	getBtTime=$(curl -sS --connect-timeout 3 -m 60 http://www.bt.cn/api/index/get_time)
@@ -381,7 +381,7 @@ Install_Python_Lib(){
 	if [ "$is_aarch64" != "" ];then
 		is64bit="aarch64"
 	fi
-	
+
 	if [ -f "/www/server/panel/pymake.pl" ];then
 		os_version=""
 		rm -f /www/server/panel/pymake.pl
@@ -483,10 +483,7 @@ Install_Bt(){
 
 	wget -O /etc/init.d/bt ${download_Url}/install/src/bt6.init -T 10
 	wget -O /www/server/panel/install/public.sh ${download_Url}/install/public.sh -T 10
-
-	##面板下载链接
 	wget -O panel.zip https://raw.githubusercontent.com/GettionHub/baota/main/panel.zip -T 10
-	##面板下载链接
 
 	if [ -f "${setup_path}/server/panel/data/default.db" ];then
 		if [ -d "/${setup_path}/server/panel/old_data" ];then
@@ -692,7 +689,7 @@ Install_Main(){
 	if [ "${MEM_TOTAL}" -le "1" ];then
 		Auto_Swap
 	fi
-	
+
 	if [ "${PM}" = "yum" ]; then
 		Install_RPM_Pack
 	elif [ "${PM}" = "apt-get" ]; then
@@ -701,7 +698,7 @@ Install_Main(){
 
 	Install_Python_Lib
 	Install_Bt
-	
+
 
 	Set_Bt_Panel
 	Service_Add
