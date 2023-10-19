@@ -485,8 +485,7 @@ Install_Bt(){
 	wget -O /www/server/panel/install/public.sh ${download_Url}/install/public.sh -T 10
 
 	##面板下载链接
-	##wget -O panel.zip https://raw.githubusercontent.com/GettionHub/baota/main/panel.zip -T 10
- 	wget -O panel.zip https://gcore.jsdelivr.net/gh/GettionHub/baota/panel.zip -T 10
+	wget -O panel.zip https://raw.githubusercontent.com/GettionHub/baota/main/panel.zip -T 10
 	##面板下载链接
 
 	if [ -f "${setup_path}/server/panel/data/default.db" ];then
@@ -748,5 +747,3 @@ echo -e "=================================================================="
 endTime=`date +%s`
 ((outTime=($endTime-$startTime)/60))
 echo -e "Time consumed:\033[32m $outTime \033[0mMinute!"
-
-
