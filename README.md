@@ -1,15 +1,15 @@
 
-镜像仓库地址：[https://hub.docker.com/r/gettionhub/baota-docker](https://hub.docker.com/r/gettionhub/baota-docker)
-
-代码仓库地址：[https://github.com/gettionhub/baota](https://github.com/gettionhub/baota)
-
-------
 # 版本区别
 文件夹为独立版本与根目录版本毫无关联，仅备份留存
 - crack      破解版
 - initial    官方原版
 - local      本地版
+------
+镜像仓库地址：[https://hub.docker.com/r/gettionhub/baota-docker](https://hub.docker.com/r/gettionhub/baota-docker)
 
+代码仓库地址：[https://github.com/gettionhub/baota](https://github.com/gettionhub/baota)
+
+------
 
 # 宝塔面板7.7安装脚本&优化补丁
 
