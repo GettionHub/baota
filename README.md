@@ -83,3 +83,56 @@ wget -O bt-uninstall.sh https://cdn.jsdelivr.net/gh/GettionHub/baota/bt-uninstal
 ```shell
 wget -O bt-uninstall.sh https://gcore.jsdelivr.net/gh/GettionHub/baota/bt-uninstall.sh && bash bt-uninstall.sh
 ```
+### 破解教程
+1、解除面板时间限制
+
+（1）资管管理器
+依次进入 /www/server/panel/data/ 目录，然后双击编辑 plugin.json 文件
+
+（2）刷新目录
+注意：如果找不到 www 目录，请刷新系统跟目录
+
+（3）定位文件
+
+（4）编辑 plugin.json
+- FinalShell 集成了编辑器，双击该文件即可打开进行编辑内容
+- Ctrl + F 打开搜索框
+- 查找："endtime": -1
+- 替换为："endtime": 999999999999
+- 点击全部替换按钮
+- 文本内容不小 查询需要时间 稍等片刻即有反馈
+- 点击 OK 按钮 关闭 查找/替换 窗口 Ctrl + S 保存即可
+
+2、解除面板版本授权
+
+（1）编辑器继续操作
+- 操作还是在上面已打开的文件中
+- /www/server/panel/data/plugin.json 文件
+- 在上面操作完成后没有关闭编辑器的同学，可继续在该界面操作
+- 如果关闭了，则定位到文件，重新打开编辑即可
+
+（2）编辑 plugin.json
+- Ctrl + F 打开搜索框
+- 查找：is_user_status
+- 点击查找按钮
+- 请移动 查找/替换 窗口，防止窗口盖住查找内容
+- 观察查找内容，代码颜色不太明显，需详细查看
+- 关闭 查找/替换 窗口
+- 将 “ltd”: -1 和 “pro”: -1 这两个 -1 都改为 0
+- 解释：ltd 是企业版，pro 是专业版；-1 表示暂无授权，0 表示专业版永久授权
+- Ctrl + S 保存内容，关闭编辑器即可
+
+3、授权文件进行保护
+回到执行命令部分 复制命令 直接回车即可
+```
+chattr +i /www/server/panel/data/plugin.json
+```
+- 没有异常表示命令执行成功
+
+----
+
+需要解除则输入以下命令
+```
+chattr -i /www/server/panel/data/plugin.json
+```
+-----
