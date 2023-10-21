@@ -83,6 +83,8 @@ wget -O bt-uninstall.sh https://cdn.jsdelivr.net/gh/GettionHub/baota/bt-uninstal
 ```shell
 wget -O bt-uninstall.sh https://gcore.jsdelivr.net/gh/GettionHub/baota/bt-uninstall.sh && bash bt-uninstall.sh
 ```
+----
+
 ### 破解教程
 1、解除面板时间限制
 
