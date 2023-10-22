@@ -55,6 +55,7 @@ wget -O optimize.sh https://cdn.jsdelivr.net/gh/GettionHub/baota/optimize_mod.sh
 ```bash
 wget -O optimize.sh https://gcore.jsdelivr.net/gh/GettionHub/baota/optimize_mod.sh && bash optimize.sh
 ```
+----
 * 如果Ngnix创建的网站出现403 forbidden(保留网站创建的文件，若无法访问请重试或使用加速器）
 ```bash
 wget -O optimize.sh https://raw.githubusercontent.com/GettionHub/baota/main/optimize_mod_fixngnix.sh && bash optimize.sh
